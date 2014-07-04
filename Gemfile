@@ -7,13 +7,14 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem "haml"
+gem 'haml'
 gem 'rest-client'
 gem 'json'
 gem 'devise'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem "haml-rails"
+gem 'haml-rails'
+gem 'bootstrap-sass'
 
 group :development, :test do
      gem 'sqlite3'
