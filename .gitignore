@@ -20,3 +20,6 @@
 
 # Ignore secrets.yml file
 /config/locales/*.yml
+
+# Ignore windows generated files
+*.lock
