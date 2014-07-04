@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "en"}
+    %head
+        %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+        %meta{:charset => "utf-8"}/
+        = csrf_meta_tags
+        = stylesheet_link_tag    "application"
+        %title= full_title(yield(:title))
+    %body
+    = render "layouts/header"
+    %h1 The Largest High School Hackathon
+    = yield
+    = render "layouts/footer"
+    = javascript_include_tag "application"
