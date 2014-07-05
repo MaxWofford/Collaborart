@@ -9,6 +9,11 @@
     %body
     = render "layouts/header"
     %h1 The Largest High School Hackathon
+
+    //For devise
+    %p.notice= notice
+    %p.alert= alert
+
     = yield
     = render "layouts/footer"
     = javascript_include_tag "application"
