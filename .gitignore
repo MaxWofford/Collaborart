@@ -22,4 +22,4 @@
 /config/locales/*.yml
 
 # Ignore windows generated files
-*.lock
+Gemfile.lock
