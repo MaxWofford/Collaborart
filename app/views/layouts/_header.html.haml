@@ -1,3 +1,17 @@
-%li= link_to "Home", root_path
-%li= link_to "Search", search_path
-%li= link_to "Contact", contact_path
+%nav.navbar.navbar-default{role: "navigation"}
+  .navbar-header
+    %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
+      %span.sr-only Toggle navigation
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    %a.navbar-brand{href: "#"} Collaborart
+  .collapse.navbar-collapse.navbar-ex1-collapse
+    %ul.nav.navbar-nav.navbar-right
+      %li= link_to "Home", root_path
+      %li= link_to "Search", search_path
+      %li= link_to "Contact", contact_path
+      - if user_signed_in? 
+        %li= link_to "Sign out", destroy_user_session_path, method: :delete
+      - else
+        %li= link_to "Sign in", new_user_session_path
