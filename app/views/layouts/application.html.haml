@@ -2,11 +2,12 @@
 %html{:lang => "en"}
     %head
     // This is the head
-        %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-        %meta{:charset => "utf-8"}/
-        = csrf_meta_tags
-        = stylesheet_link_tag    "application"
-        %title= full_title(yield(:title))
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:charset => "utf-8"}/
+    = csrf_meta_tags
+    = stylesheet_link_tag    "application"
+    %title= full_title(yield(:title))
+
     %body
     // header
     = render "layouts/header"
@@ -20,6 +21,5 @@
 
     // This is the footer
     = render "layouts/footer"
-
     // This is the application's JS
     = javascript_include_tag "application"
