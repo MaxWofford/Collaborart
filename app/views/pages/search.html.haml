@@ -1,2 +1,15 @@
 - provide(:title, "Search")
-%h1 Search
+%h1 Search by
+.col-md-4.panel.panel-default
+    %h3 Tag
+    %input{:type => "text"}/
+    %p (Seperated by commas)
+.col-md-4.panel.panel-default
+    %h3 Artist
+    %input{:type => "text"}/
+.col-md-4.panel.panel-default
+    %h3 Type
+
+    //TODO: Generate options based on art types
+    %select
+        %option cake
