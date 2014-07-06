@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'layouts/_footer'
-
   get 'layouts/header'
 
   get 'search' => 'pages#search'
