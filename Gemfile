@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem "paperclip", "~> 4.1"
 
 group :development, :test do
      gem 'sqlite3'
