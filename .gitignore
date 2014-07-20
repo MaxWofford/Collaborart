@@ -20,3 +20,6 @@
 
 # Ignore secrets.yml file
 /config/locales/*.yml
+
+# Ignore seeds.rb
+/db/seeds.rb
