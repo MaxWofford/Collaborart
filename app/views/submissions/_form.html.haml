@@ -5,7 +5,12 @@
       %ul
         - @submission.errors.full_messages.each do |msg|
           %li= msg
-
+  .field
+    = f.label :image
+    = f.file_field :image, :class => "form-group"
+  .field
+    = f.label :title
+    = f.text_area :title
   .field
     = f.label :description
     = f.text_area :description

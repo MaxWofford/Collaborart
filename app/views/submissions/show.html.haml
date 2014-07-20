@@ -1,5 +1,8 @@
 %p#notice= notice
 
+= image_tag @submission.image.url(:medium)
+%h3
+  = @submission.title
 %p
   %b Description:
   = @submission.description
