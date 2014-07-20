@@ -16,6 +16,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'haml-rails'
 gem 'bootstrap-sass'
 gem "paperclip", "~> 4.1"
+gem 'aws-sdk', '~> 1.20.0'
 
 group :development, :test do
      gem 'sqlite3'
